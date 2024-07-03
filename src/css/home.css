@@ -1,0 +1,93 @@
+.home-image img {
+    width: 100%;
+    height: 80vh;
+}
+
+.home-image {
+    position: relative;
+}
+
+.home-title {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 5rem;
+}
+
+.home-title p {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Oswald';
+    line-height: 12px;
+}
+
+.home-main-title-1 {
+    width: 39rem;
+    line-height: 80px !important;
+}
+
+.home-main-title-2 {
+    width: 25rem;
+}
+
+.home-button {
+    background-color: white;
+    color: black;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.home-border-box {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+    margin-right: 10rem;
+    margin-top: 8%;
+    color: black;
+}
+
+.home-icon span svg {
+    width: 3rem;
+    height: 14vh;
+    margin-right:1.5rem;
+}
+
+.home-icon {
+    margin: 0px 35px 0 35px;
+}
+
+.home-border-margin {
+    margin: 15px;
+}
+
+.custom-hr {
+    width: 1px;
+    height: 100px;
+    background-color: #000;
+    /* margin: 0 40px; */
+}
+
+.home-border-title p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home-border-title span {
+    font-size: 15px;
+}
+
+.home-border-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-flex-start{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    text-align: left;
+}

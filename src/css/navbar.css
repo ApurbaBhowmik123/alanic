@@ -1,0 +1,43 @@
+.search-icon p {
+    margin-left: -15rem;
+}
+
+.search-icon p svg {
+    width: 15px;
+}
+
+.navbar-search input {
+    outline: none
+}
+
+.navbar-mail {
+    margin-left: -4rem;
+}
+
+.navbar-button-1 {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 8rem !important;
+    padding: 10px;
+}
+
+.navbar-button-2 {
+    width: 8rem !important;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+.navbar-icon p {
+    margin-right: 15rem;
+}
+
+.navbar-icon img {
+    width: 80%;
+}
+
+.navbar-menu p {
+    font-weight: 600;
+    font-size: 17px;
+}

@@ -1,9 +1,12 @@
+import Navbar from "./component/Navbar"
+import HomePage from "./page/HomePage"
 
 function App() {
 
   return (
     <div>
-      <p className="text-7xl text-center text-blue-400">hello world</p>
+    <Navbar/>
+    <HomePage />
     </div>
   )
 }
