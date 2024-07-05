@@ -53,7 +53,8 @@
 .home-icon span svg {
     width: 3rem;
     height: 14vh;
-    margin-right:1.5rem;
+    margin-right: 1.5rem;
+    stroke-width: 1;
 }
 
 .home-icon {
@@ -85,9 +86,61 @@
     flex-direction: column;
     justify-content: center;
 }
-.home-flex-start{
+
+.home-flex-start {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
+}
+
+.home-image-hover {
+    position: relative;
+}
+
+.home-image-hover img {
+    width: 600px;
+    height: 500px;
+    flex: 1 1 50%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.home-image-hover img:hover {
+    width: 1100px;
+}
+
+.home-image-text {
+    position: absolute;
+    bottom: 80px;
+    left: -25px;
+    transform: rotate(270deg);
+    display: flex;
+}
+
+.gridtext {
+    height: 600px;
+    width: 3px;
+    background-color: #000;
+    top: -275px;
+    transform: rotate(90deg);
+    right: 600px;
+}
+
+.caro-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.react-multi-carousel-track {
+    gap: 10px;
+}
+
+.react-multiple-carousel__arrow {
+    background-color: #F3F3F3 !important;
+}
+
+.react-multiple-carousel__arrow::before {
+    color: black !important;
+    font-weight: bold;
 }
