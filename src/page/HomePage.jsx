@@ -19,6 +19,10 @@ import caro5 from '../assets/Rectangle 48.png';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { MoveRight } from 'lucide-react';
+import { MoveLeft } from 'lucide-react';
+
+
 const HomePage = () => {
     const imageData = [
         {
@@ -162,19 +166,27 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="section grid grid-cols-6 gap-2 mt-16">
-                <div className="col-1">
-                    <p>FEATURED <span>MEN’S WEAR</span></p>
+                <div className="col-1 home-rotate-main">
+                    <p className="flex flex-col home-rotate text-4xl font-bold">FEATURED <span className="text-6xl home-span">MEN’S WEAR</span></p>
                 </div>
                 <div className="col-span-5 relative">
-                    <strong className="text-4xl">MEN’S COLLECTION</strong>
-                    <hr className="gridtext absolute" />
+                    <div className="flex">
+                        <strong className="text-4xl">MEN’S COLLECTION</strong>
+                        <hr className="gridtext absolute" />
+                        <div className="flex">
+                            <MoveRight />
+                            1-3
+                            <MoveLeft />
+                        </div>
+                    </div>
+
                     <div className="gap-2">
                         <Carousel responsive={responsive} className="mt-8">
                             {
                                 caraImageData.map((item, index) => (
                                     <div key={index} className="caro-image">
                                         <img src={item.image} />
-                                        <p>{item.name}</p>
+                                        <p className="flex justify-center font-bold">{item.name}</p>
                                     </div>
                                 ))
                             }
