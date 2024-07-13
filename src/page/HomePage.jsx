@@ -14,6 +14,25 @@ import caro2 from '../assets/Rectangle 51.png';
 import caro3 from '../assets/Rectangle 50.png';
 import caro4 from '../assets/Rectangle 49.png';
 import caro5 from '../assets/Rectangle 48.png';
+import caro6 from '../assets/Rectangle 138.png';
+import caro7 from '../assets/Rectangle 139.png';
+import caro8 from '../assets/Rectangle 142.png';
+import caro9 from '../assets/Rectangle 143.png';
+import women1 from '../assets/Rectangle 145.png'
+import women2 from '../assets/Rectangle 144.png'
+import women3 from '../assets/Rectangle 146.png'
+import women4 from '../assets/Rectangle 147.png'
+import women5 from '../assets/Rectangle 148.png'
+import women6 from '../assets/Rectangle 29.png'
+import women7 from '../assets/Rectangle 30.png'
+import gym1 from '../assets/Rectangle 58.png'
+import gym2 from '../assets/Rectangle 59.png'
+import gym3 from '../assets/Rectangle 60.png'
+import gym4 from '../assets/Rectangle 61.png'
+import gym5 from '../assets/Rectangle 61 (1).png'
+
+
+
 
 
 import Carousel from "react-multi-carousel";
@@ -74,6 +93,66 @@ const HomePage = () => {
         },
         {
             "image": caro5,
+            "name": "kurta"
+        }
+    ]
+    const womenImageData = [
+        {
+            "image": women1,
+            "name": "shirt"
+        },
+        {
+            "image": women2,
+            "name": "jeans"
+        },
+        {
+            "image": women3,
+            "name": "kurta"
+        },
+        {
+            "image": women4,
+            "name": "ganji"
+        },
+        {
+            "image": women5,
+            "name": "jacket"
+        },
+        {
+            "image": women3,
+            "name": "shirt"
+        },
+        {
+            "image": women5,
+            "name": "kurta"
+        }
+    ]
+    const GymImageData = [
+        {
+            "image": gym1,
+            "name": "shirt"
+        },
+        {
+            "image": gym2,
+            "name": "jeans"
+        },
+        {
+            "image": gym3,
+            "name": "kurta"
+        },
+        {
+            "image": gym4,
+            "name": "ganji"
+        },
+        {
+            "image": gym5,
+            "name": "jacket"
+        },
+        {
+            "image": gym2,
+            "name": "shirt"
+        },
+        {
+            "image": gym5,
             "name": "kurta"
         }
     ]
@@ -193,6 +272,98 @@ const HomePage = () => {
 
                         </Carousel>
                     </div>
+                </div>
+
+
+            </div>
+            <div className="section grid grid-cols-2 mt-20 gap-2">
+                <div className="col-1">
+                    <div className="image-main-1  grid gap-2">
+                        <div className="grid grid-cols-2 gap-2">
+                            <img src={caro6} />
+                            <img src={caro7} />
+                        </div>
+                        <img src={caro9} />
+                    </div>
+                </div>
+                <div className="col-2">
+                    <div className="image-main-2">
+                        <img src={caro8} />
+                    </div>
+                </div>
+            </div>
+            <div className="section grid grid-cols-6 gap-2 mt-16">
+                <div className="col-1 home-rotate-main">
+                    <p className="flex flex-col home-rotate text-4xl font-bold">DAILY DEALS <span className="text-6xl home-span">FLASH SALE</span></p>
+                </div>
+                <div className="col-span-5 relative">
+                    <div className="flex">
+                        <strong className="text-4xl">WOMEN’S COLLECTION</strong>
+                        <hr className="gridtext absolute" />
+                        <div className="flex">
+                            <MoveRight />
+                            1-3
+                            <MoveLeft />
+                        </div>
+                    </div>
+
+                    <div className="gap-2">
+                        <Carousel responsive={responsive} className="mt-8">
+                            {
+                                womenImageData.map((item, index) => (
+                                    <div key={index} className="caro-image">
+                                        <img src={item.image} />
+                                        <p className="flex justify-center font-bold">{item.name}</p>
+                                    </div>
+                                ))
+                            }
+
+                        </Carousel>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div className="grid grid-cols-2 mt-12">
+                <div className="col-1">
+                    <img src={women6} />
+
+
+                </div>
+                <div className="col-2">
+                    <img src={women7} />
+                </div>
+            </div>
+            <div className="section grid grid-cols-6 gap-2 mt-16">
+                <div className="col-1 home-rotate-main">
+                    <p className="flex flex-col home-rotate text-4xl font-bold">IT'S TIME FOR <span className="text-6xl home-span">WORK OUT</span></p>
+                </div>
+                <div className="col-span-5 relative">
+                    <div className="flex">
+                        <strong className="text-4xl">GYM & FITNESS</strong>
+                        <hr className="gridtext absolute" />
+                        <div className="flex">
+                            <MoveRight />
+                            1-3
+                            <MoveLeft />
+                        </div>
+                    </div>
+
+                    <div className="gap-2">
+                        <Carousel responsive={responsive} className="mt-8">
+                            {
+                                GymImageData.map((item, index) => (
+                                    <div key={index} className="caro-image">
+                                        <img src={item.image} />
+                                        <p className="flex justify-center font-bold">{item.name}</p>
+                                    </div>
+                                ))
+                            }
+
+                        </Carousel>
+                    </div>
+
                 </div>
 
 

@@ -171,3 +171,16 @@
     color: #ccc8c8;
     letter-spacing: -4px;
 }
+
+.image-main-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-main-2 img {
+    height: 100%;
+    width: 100%;
+}
+.image-main-2{
+    height:97%;
+}
